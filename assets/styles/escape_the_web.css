@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
 body {
     width: 100%;
     background-image: url(../images/one.png);
@@ -5,22 +13,22 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     height: 200vh;
 }
 
 /* THE TOP SECTION */
 
 .top{
-    height: 40vh;
+    height: 45vh;
 }
 h1, h2, h3, p {
-    margin: 0;
+    margin: 0 auto;
 }
 h1, h2{
     font-family: 'Kalam', cursive;
 }
-h2, h3, p{
+h2, h3, p, .downdowndown, .upupup{
     color: #707070;
 }
 
@@ -32,19 +40,20 @@ h3{
     font-size: 24px;
     font-weight: 600;
 }
-p{
+p, .downdowndown, .upupup{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px
-    font-weight: 100;
+    font-weight: 250;
 }
 
 .title h1{
-    font-size: 120px;
-    margin: 0;
+    font-size: 9vw;
+    margin: 0 auto;
 }
 
 .explanation{
-    margin: 0;
+    margin: 0 auto;
+    width: 80%;
 }
 
 /* THE MIDDLE SECTION */
@@ -61,29 +70,23 @@ p{
     background-color: #FF0000;
     border-radius: 50%;
     display: inline-block;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .pay, .click, .look{
-    background-color: aquamarine;
     width: 300px;
 }
 
 
 /* THE BOTTOM SECTION */
 .bottom{
-    background-color: rgba(245, 245, 220, 0.555);
-    height: 115vh;
+    height: 110vh;
     display: block;
     position: relative;
     width: 100%;
 }
 
-.bottom div{
-    border: 1px solid cadetblue;
-}
-
-.bottom div span {
+.arr {
    background-image: url(../images/arrowdown.png);
    height: 40px;
    width: 120px;
@@ -96,13 +99,35 @@ p{
     transform: rotate(180deg);
 }
 
-/* .bottomscroll {
+.topscroll{
+    margin-top: 35px;
+}
+.bottomscroll {
     position: absolute;
     width: 100%;
-    float:bottom; */
-    
-    
+    bottom: 0;
+    left: 0;
+    padding-bottom: 10px;
+}
 
-    
+.winner{
+    margin-top: 180px;
+    visibility: hidden;
+}
+.go_button{
+        background-image: url(../images/Go.png);
+        height: 46px;
+        width: 159px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 320px; 
+}
+
+.go_button:hover{
+    height: 50px;
+    width: 163px;
+    margin-top: 318px;
 }
 
