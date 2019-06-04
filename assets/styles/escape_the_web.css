@@ -37,7 +37,7 @@ h2{
 }
 h3{
     font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
 }
 p, .downdowndown, .upupup{
@@ -63,6 +63,7 @@ p, .downdowndown, .upupup{
     flex-direction:row;
     align-items: flex-start;
     justify-content: center;
+    padding-top: 10px;
 }
 .circle{
     height: 80px;
@@ -71,6 +72,23 @@ p, .downdowndown, .upupup{
     border-radius: 50%;
     display: inline-block;
     margin: 0 auto;
+    transition: all 3s ease-out;
+    
+}
+.hint{
+    height: 80px;
+    width: 80px;
+    background-image: url(../images/hint.png);
+    display: inline-block;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.circle:hover .hint {
+    opacity: 1;
 }
 
 .pay, .click, .look{

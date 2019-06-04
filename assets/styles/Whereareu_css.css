@@ -1,0 +1,21 @@
+h1{
+    margin: 0 auto;
+    font-size: 9vw;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    display: block;
+    position: fixed;
+    margin: auto;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 175px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+}
+.div_nnn{
+    width: 100%;
+    margin: 0 auto;
+}
