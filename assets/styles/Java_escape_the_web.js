@@ -64,6 +64,11 @@ $(window).scroll(function() {
         $('.winner').css('visibility', 'visible');
         $('.upupup').html('Last one up!');
         console.log('2d');
+        
+    }
+
+    else if (count_bottom === 3 && count_top === 2) {
+        $('.bottomscroll').html('visibility', 'hidden');
     }
     
  });
