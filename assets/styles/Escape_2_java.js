@@ -16,7 +16,7 @@ $(document).on('click', '.u', function(event) {
     event.preventDefault();
     // write code here
     console.log("AAAA");
-    $('main').html('visibility', 'hidden');
+    $('main').css('visibility', 'hidden');
     let nextthing = true;
 let myinterval = setInterval(function() { 
     console.log("Hello"); 

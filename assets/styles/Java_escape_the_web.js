@@ -68,7 +68,7 @@ $(window).scroll(function() {
     }
 
     else if (count_bottom === 3 && count_top === 2) {
-        $('.bottomscroll').html('visibility', 'hidden');
+        $('.bottomscroll').css('visibility', 'hidden');
     }
     
  });
